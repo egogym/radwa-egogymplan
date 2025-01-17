@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGO GYM - Weight Loss Program</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #ff0000;
+            --secondary-color: #2d2d2d;
+            --accent-color: #404040;
+        }
+
+        .youtube-btn {
+            background: linear-gradient(45deg, #cc0000, var(--primary-color));
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.875rem;
+            display: inline-block;
+        }
+
+        .youtube-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(255, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+
+        .section-header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .workout-table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 2rem auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .workout-table th {
+            background: linear-gradient(45deg, #2d2d2d, var(--primary-color));
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .workout-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--accent-color);
+            text-align: center;
+        }
+
+        .workout-table tr:hover {
+            background-color: var(--accent-color);
+        }
+
+        section {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 0 auto 2rem auto;
+            max-width: 1200px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .program-nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 8px;
+            z-index: 1000;
+            border: 1px solid var(--primary-color);
+        }
+
+        @media print {
+            .program-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <div class="program-nav">
+        <div class="space-y-2">
+            <a href="#overview" class="block text-white hover:text-red-500">Overview</a>
+            <a href="#day1" class="block text-white hover:text-red-500">Day 1</a>
+            <a href="#day2" class="block text-white hover:text-red-500">Day 2</a>
+            <a href="#day3" class="block text-white hover:text-red-500">Day 3</a>
+            <a href="#day4" class="block text-white hover:text-red-500">Day 4</a>
+            <a href="#guidelines" class="block text-white hover:text-red-500">Guidelines</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="py-12" id="overview">
+        <h1 class="text-6xl font-bold mb-4 text-red-600">EGO GYM</h1>
+        <h2 class="text-4xl font-bold mb-4 text-white">Radwa Weight Loss Program</h2>
+        <p class="text-xl">4-Week Comprehensive Weight Loss and Strength Training Plan</p>
+
+    </header>
+
+    <!-- Program Overview -->
+    <section>
+        <h2 class="text-2xl font-bold mb-4 section-header">Program Overview</h2>
+        <p class="mb-4">This 4-week weight loss program combines strength training and cardio for optimal fat loss results. Training days are Saturday, Sunday, Monday, and Wednesday, with built-in recovery days. Each session includes a proper warm-up and cool-down to prevent injury and promote recovery.</p>
+        <p>         <a href="https://egogym.github.io/Radwa-egogymplan/dietplan.html" class="youtube-btn inline-block">Diet Plan</a>
+        </p>
+    </section>
+
+    <!-- Day 1 -->
+    <section id="day1">
+        <h2 class="text-2xl font-bold mb-4 section-header">Day 1: Full Body Strength Training</h2>
+
+        <!-- Warm-Up Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Warm-Up (5 minutes)</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Duration</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Treadmill Walking or Cycling</td>
+                    <td class="text-gray-300">5 minutes</td>
+                    <td class="text-gray-300">Light intensity to warm up muscles</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Main Workout Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Main Workout</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Sets x Reps</th>
+                    <th>Notes</th>
+                    <th>Tutorial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Squats</td>
+                    <td class="text-gray-300">3 x 10</td>
+                    <td class="text-gray-300">Bodyweight or light dumbbells</td>
+                    <td><a href="https://www.youtube.com/watch?v=YaXPRqUwItQ" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Push-ups</td>
+                    <td class="text-gray-300">3 x 8-10</td>
+                    <td class="text-gray-300">Modified on knees if needed</td>
+                    <td><a href="https://www.youtube.com/watch?v=IODxDxX7oi4" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Dumbbell Rows</td>
+                    <td class="text-gray-300">3 x 10 per side</td>
+                    <td class="text-gray-300">Focus on form</td>
+                    <td><a href="https://www.youtube.com/watch?v=roCP6wCXPqo" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Shoulder Press</td>
+                    <td class="text-gray-300">3 x 10</td>
+                    <td class="text-gray-300">Use dumbbells</td>
+                    <td><a href="https://www.youtube.com/watch?v=qEwKCR5JCog" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Deadlifts</td>
+                    <td class="text-gray-300">3 x 10</td>
+                    <td class="text-gray-300">Light weights, focus on form</td>
+                    <td><a href="https://www.youtube.com/watch?v=vtxrp52PeDE" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Plank Shoulder Taps</td>
+                    <td class="text-gray-300">3 x 20 taps</td>
+                    <td class="text-gray-300">Keep hips stable</td>
+                    <td><a href="https://www.youtube.com/watch?v=LurCQ9XGkt0" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Jumping Jacks</td>
+                    <td class="text-gray-300">3 x 30 seconds</td>
+                    <td class="text-gray-300">Cardio burst</td>
+                    <td><a href="https://www.youtube.com/watch?v=9L2b2khySLE" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Cool-down Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Cool-down (5 minutes)</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Duration</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Stretching</td>
+                    <td class="text-gray-300">5 minutes</td>
+                    <td class="text-gray-300">Focus on worked muscle groups</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Day 2 -->
+    <section id="day2">
+        <h2 class="text-2xl font-bold mb-4 section-header">Day 2: Cardio and Core</h2>
+
+        <!-- Warm-Up Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Warm-Up (5 minutes)</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Duration</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Brisk Walking or Cycling</td>
+                    <td class="text-gray-300">5 minutes</td>
+                    <td class="text-gray-300">Moderate pace</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Main Workout Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Main Workout</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Sets x Reps/Duration</th>
+                    <th>Notes</th>
+                    <th>Tutorial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">High Knees</td>
+                    <td class="text-gray-300">3 x 30 seconds</td>
+                    <td class="text-gray-300">High intensity</td>
+                    <td><a href="https://www.youtube.com/watch?v=tx5rgpDAJRI" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Jogging Intervals</td>
+                    <td class="text-gray-300">20 minutes total</td>
+                    <td class="text-gray-300">1 min jog, 1 min walk</td>
+                    <td><a href="https://www.youtube.com/watch?v=9L2b2khySLE" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Bicycle Crunches</td>
+                    <td class="text-gray-300">3 x 15</td>
+                    <td class="text-gray-300">Slow and controlled</td>
+                    <td><a href="https://www.youtube.com/watch?v=1we3bh9ZxkY" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Russian Twists</td>
+                    <td class="text-gray-300">3 x 15 per side</td>
+                    <td class="text-gray-300">Use weight if desired</td>
+                    <td><a href="https://www.youtube.com/watch?v=wkD8rjkodUI" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Plank with Leg Lifts</td>
+                    <td class="text-gray-300">3 x 10 per leg</td>
+                    <td class="text-gray-300">Keep hips stable</td>
+                    <td><a href="https://www.youtube.com/watch?v=LurCQ9XGkt0" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Burpees</td>
+                    <td class="text-gray-300">3 x 8-10</td>
+                    <td class="text-gray-300">Modified if needed</td>
+                    <td><a href="https://www.youtube.com/watch?v=dZgVxmf6jkA" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Side Plank</td>
+                    <td class="text-gray-300">3 x 20 sec per side</td>
+                    <td class="text-gray-300">Maintain proper form</td>
+                    <td><a href="https://www.youtube.com/watch?v=rCxF2nG9vQ0" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Day 3 -->
+    <section id="day3">
+        <h2 class="text-2xl font-bold mb-4 section-header">Day 3: Upper Body and Cardio</h2>
+
+        <!-- Warm-Up Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Warm-Up (5 minutes)</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Duration</th>
+                    <th>Notes</th>
+                    <th>Tutorial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Arm Circles</td>
+                    <td class="text-gray-300">30 seconds each direction</td>
+                    <td class="text-gray-300">Dynamic movement</td>
+                    <td><a href="https://www.youtube.com/watch?v=140RTNMciH8" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Main Workout Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Main Workout</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Sets x Reps</th>
+                    <th>Notes</th>
+                    <th>Tutorial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Push-ups</td>
+                    <td class="text-gray-300">3 x 10</td>
+                    <td class="text-gray-300">Full range of motion</td>
+                    <td><a href="https://www.youtube.com/watch?v=IODxDxX7oi4" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Dumbbell Shoulder Press</td>
+                    <td class="text-gray-300">3 x 12</td>
+                    <td class="text-gray-300">Control movement</td>
+                    <td><a href="https://www.youtube.com/watch?v=qEwKCR5JCog" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Bent-Over Rows</td>
+                    <td class="text-gray-300">3 x 12</td>
+                    <td class="text-gray-300">Engage back muscles</td>
+                    <td><a href="https://www.youtube.com/watch?v=FWJR5Ve8bnQ" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Tricep Dips</td>
+                    <td class="text-gray-300">3 x 10</td>
+                    <td class="text-gray-300">Use bench or chair</td>
+                    <td><a href="https://www.youtube.com/watch?v=6kALZikXxLc" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Lateral Raises</td>
+                    <td class="text-gray-300">3 x 12</td>
+                    <td class="text-gray-300">Light dumbbells</td>
+                    <td><a href="https://www.youtube.com/watch?v=3VcKaXpzqRo" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Mountain Climbers</td>
+                    <td class="text-gray-300">3 x 30 seconds</td>
+                    <td class="text-gray-300">Cardio burst</td>
+                    <td><a href="https://www.youtube.com/watch?v=nmwgirgXLYM" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Plank to Downward Dog</td>
+                    <td class="text-gray-300">3 x 10</td>
+                    <td class="text-gray-300">Full body movement</td>
+                    <td><a href="https://www.youtube.com/watch?v=WkAHvxFN_-k" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Cardio Finisher -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Cardio Finisher (10 minutes)</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Duration</th>
+                    <th>Notes</th>
+                    <th>Tutorial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Burpees</td>
+                    <td class="text-gray-300">30 seconds</td>
+                    <td class="text-gray-300">Rest 30 seconds between sets</td>
+                    <td><a href="https://www.youtube.com/watch?v=dZgVxmf6jkA" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Jump Rope</td>
+                    <td class="text-gray-300">30 seconds</td>
+                    <td class="text-gray-300">Alternate with Burpees</td>
+                    <td><a href="https://www.youtube.com/watch?v=u3zgHI8QnqE" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Day 4 -->
+    <section id="day4">
+        <h2 class="text-2xl font-bold mb-4 section-header">Day 4: Lower Body and Cardio</h2>
+
+        <!-- Warm-Up Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Warm-Up (5 minutes)</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Duration</th>
+                    <th>Notes</th>
+                    <th>Tutorial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Walking or Cycling</td>
+                    <td class="text-gray-300">5 minutes</td>
+                    <td class="text-gray-300">Light intensity</td>
+                    <td><a href="https://www.youtube.com/watch?v=5gqKjkdUOrU" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Main Workout Section -->
+        <h4 class="text-lg font-bold mb-4 text-red-500">Main Workout</h4>
+        <table class="workout-table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Sets x Reps</th>
+                    <th>Notes</th>
+                    <th>Tutorial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-gray-300">Lunges</td>
+                    <td class="text-gray-300">3 x 10 per leg</td>
+                    <td class="text-gray-300">Forward or stationary</td>
+                    <td><a href="https://www.youtube.com/watch?v=L8fvypPrzzs" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Step-Ups</td>
+                    <td class="text-gray-300">3 x 12 per leg</td>
+                    <td class="text-gray-300">Use bench or box</td>
+                    <td><a href="https://www.youtube.com/watch?v=WCFCdxzFBa4" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Glute Bridges</td>
+                    <td class="text-gray-300">3 x 15</td>
+                    <td class="text-gray-300">Full hip extension</td>
+                    <td><a href="https://www.youtube.com/watch?v=GmHGUhEQrU8" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Deadlifts</td>
+                    <td class="text-gray-300">3 x 10</td>
+                    <td class="text-gray-300">Focus on form</td>
+                    <td><a href="https://www.youtube.com/watch?v=vtxrp52PeDE" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Side Lunges</td>
+                    <td class="text-gray-300">3 x 10 per side</td>
+                    <td class="text-gray-300">Control movement</td>
+                    <td><a href="https://www.youtube.com/watch?v=1D_tsUSW3ZY" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Jump Squats</td>
+                    <td class="text-gray-300">3 x 10</td>
+                    <td class="text-gray-300">Explosive movement</td>
+                    <td><a href="https://www.youtube.com/watch?v=Azl5tkCzDcc" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+                <tr>
+                    <td class="text-gray-300">Mountain Climbers</td>
+                    <td class="text-gray-300">3 x 30 seconds</td>
+                    <td class="text-gray-300">Keep core engaged</td>
+                    <td><a href="https://www.youtube.com/watch?v=nmwgirgXLYM" target="_blank" class="youtube-btn">Watch</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Guidelines Section -->
+    <section id="guidelines">
+        <h2 class="text-2xl font-bold mb-4 section-header">Training Guidelines</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-black p-6 rounded-lg border border-red-800">
+                <h3 class="text-xl text-red-500 mb-4">Key Points</h3>
+                <ul class="text-gray-300 space-y-2">
+                    <li>Rest 30-60 seconds between exercises</li>
+                    <li>Use Tuesday and Friday for recovery</li>
+                    <li>Focus on proper form over weight/speed</li>
+                    <li>Stay consistent with the schedule</li>
+                </ul>
+            </div>
+            <div class="bg-black p-6 rounded-lg border border-red-800">
+                <h3 class="text-xl text-red-500 mb-4">Nutrition & Recovery</h3>
+                <ul class="text-gray-300 space-y-2">
+                    <li>Maintain a caloric deficit for weight loss</li>
+                    <li>Drink plenty of water throughout the day</li>
+                    <li>Get 7-8 hours of sleep per night</li>
+                    <li>Consider light stretching on rest days</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 px-6 border-t border-red-800">
+        <div class="container mx-auto grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4 text-red-500 flex items-center justify-center">
+                    <i class="bi bi-gear-fill text-white mr-2"></i>EGO GYM
+                </h3>
+                <p>Transform your body, transform your life.</p>
+            </div>
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4 text-red-500">Connect With Us</h3>
+                <div class="space-y-4">
+                    <a href="https://www.instagram.com/egoo.gym" target="_blank" class="flex items-center justify-center hover:text-red-500 transition-colors">
+                        <i class="bi bi-instagram text-2xl mr-3"></i> Follow us on Instagram
+                    </a>
+                    <a href="https://bit.ly/egogym-location" target="_blank" class="flex items-center justify-center hover:text-red-500 transition-colors">
+                        <i class="bi bi-geo-alt-fill text-2xl mr-3"></i> Find Our Location
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUJ0jFUxLIvjjVWFcNrHg9fl45bx3Fc3_0ry52y2lOPuHa_w/viewform?usp=dialog" target="_blank" class="flex items-center justify-center hover:text-red-500 transition-colors">
+                        <i class="bi bi-chat-dots-fill text-2xl mr-3"></i> Feedback Form
+                    </a>
+                </div>
+            </div>
+            <div class="text-center">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-red-500 flex items-center justify-center">
+                        <i class="bi bi-envelope-fill text-white mr-2"></i> Contact Us
+                    </h3>
+                    <a href="mailto:contact@egogym.com" class="flex items-center justify-center hover:text-red-500 transition-colors mb-4">
+                        <i class="bi bi-envelope text-2xl mr-3"></i> contact@egogym.com
+                    </a>
+                </div>
+                <p class="text-sm text-gray-400">&copy; 2025 EGO GYM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
